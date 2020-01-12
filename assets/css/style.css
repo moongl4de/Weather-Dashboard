@@ -1,0 +1,125 @@
+html {
+    background-image: url("https://stormandsky.com/gif/14.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#main-container {
+
+    background-color: rgba(230, 230, 230, 0.61);
+    width: 75%;
+    height: 600px;
+    margin: 3% auto;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: -9px 8px 3px rgba(0, 0, 0, 0.137);
+
+}
+
+#header {
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.445);
+    height: 100px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+        
+    
+}
+#header-text {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px rgba(80, 80, 80, 0.308);
+}
+
+#main-row {
+    background-color: rgba(255, 0, 0, 0);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 18px;
+    height: 450px;
+
+}
+
+#main-col-left{
+    background-color: rgba(255, 255, 255, 0.589);
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    border: 2px solid rgba(255, 255, 255, 0.068);
+    border-right: none;
+}
+
+
+
+.btn {
+    margin: 1px auto;
+    width: 100%;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    border-radius: 0;
+
+}
+
+#main-col-right{
+    background-color: rgba(255, 255, 255, 0.589);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
+    
+}
+
+.city-div {
+    border: 1px solid rgba(112, 112, 112, 0.315);
+    background-color: rgba(255, 255, 255, 0.295);
+    margin: 15px;
+    height: 200px;
+    float: left;    
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.city-div:hover {
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.062);
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+.forecast-div {
+    border: 1px solid rgba(112, 112, 112, 0.315);
+    background-color: rgba(255, 255, 255, 0.295);
+    margin: 15px;
+    height: 200px;
+    float: left;    
+    width: 90%;
+    padding: 15px 25px;
+    border-radius: 10px;
+    
+
+}
+
+.forecast-div:hover {
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.062);
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+
+
+#city-title {
+    font-weight: bold;
+    font-size: 20px;
+}
