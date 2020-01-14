@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -15,29 +16,23 @@
     </div>
     <div class="row" id="main-row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" id="main-col-left">
-            <form>
+            <form id="form">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Search for a City:</label>
-                  <input type="text" class="form-control" id="city-input" placeholder="">
+                  <input type="text" class="form-control" id="city-input" autocomplete="off" placeholder="">
                 </div>
             </form>
             <div class="button-div">
-                <button type="button" class="btn btn-outline-secondary">Manhattan, NY</button>
-                <button type="button" class="btn btn-outline-secondary">Las Vegas, NV</button>
-                <button type="button" class="btn btn-outline-secondary">Denver, CO</button>
-                <button type="button" class="btn btn-outline-secondary">Los Angeles, CA</button>
-                <button type="button" class="btn btn-outline-secondary">Atlanta, GA</button>
-                <button type="button" class="btn btn-outline-secondary">Seattle, WA</button>
-                <button type="button" class="btn btn-outline-secondary">Austin, TX</button>
+
             </div>
         </div>
         
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9" id="main-col-right">
             <div class="city-div">
-                <p id="city-title">Atlanta</p>
-                <p id="temperature">90.9F</p>
-                <p id="wind-speed">4.7 MPH</p>
-                <p id="UV-index">9.49</p>
+                <p id="city-title"></p>
+                <p id="temperature"></p>
+                <p id="wind-speed"></p>
+                <p id="UV-index"></p>
             </div>
             <div class="forecast-div">
                 Five Day Forecast
@@ -51,6 +46,8 @@
 
 
 </div>
+
+<footer>- Alex Gignilliat -<br>&copy;2020</footer>
 
 
 
