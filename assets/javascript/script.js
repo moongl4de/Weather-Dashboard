@@ -9,23 +9,19 @@ $("#form").on('submit', function(e){
   e.preventDefault();
   var city=""
   city = $("#city-input").val()
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function(response) {
+  searchWeather(city, function(response) {
 
-    var longitude = response.coord.lon
+
+    const longitude = response.coord.lon
     var latitude = response.coord.lat
+    var icon = `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`
+
+    $('#icon').html(`<img src="${icon}">`); //  ES6
+
+    
     console.log(longitude, latitude)
-    $("#city-title").empty()
-    $("#city-title").append(response.name)
-    $(".city").attr("style", "font-weight: bold; font-size: 30px", )
-    $("#wind-speed").empty()
-    $("#wind-speed").append("Wind speed: " + response.wind.speed + " MPH")
-    var convert = response.main.temp
-    var F = (convert - 273.15) * 1.80 + 32
-    F = F.toFixed(0)
+    displayWeatherInfo(response);
+    var F = convertToFarenheit(response.main.temp); 
     $("#temperature").empty()
     $("#temperature").append("Temperature: " + F + "°")
 
@@ -63,9 +59,9 @@ $("#form").on('submit', function(e){
       buttonDiv.prepend(create)
       var cityString = response.name
       cityButtonArr.push(cityString.toString())
-      localStorage.setItem("cityStorage", JSON.stringify(cityButtonArr))};
-    })});
-
+      localStorage.setItem("cityStorage", JSON.stringify(cityButtonArr))};  
+  });
+});
 loadData();
 
 function loadData() {
@@ -81,22 +77,44 @@ function loadData() {
     };
 };
 
-$(".btn").on('click', function(){
-  city = $(this).text()
+function searchWeather(city, callback) {
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
   $.ajax({
     url: queryURL,
     method: "GET"
-  }).then(function(response) {
+  })
+  .then(function(response) {
+      callback(response);
+  })
+  .catch()
+}
+
+
+function convertToFarenheit(num) {
+  var convert = num;
+  var F = (convert - 273.15) * 1.80 + 32
+  F = F.toFixed(0)
+
+  return F; // 0
+}
+
+
+function displayWeatherInfo(response) {
+
+  $("#city-title").html(response.name)
+  $(".city").attr("style", "font-weight: bold; font-size: 30px", )
+  $("#wind-speed").html("Wind speed: " + response.wind.speed + " MPH")
+}
+
+
+$(".btn").on('click', function(){
+  city = $(this).text()
+  searchWeather(city, function(response) {
     reloadData();
-    $("#city-title").append(response.name)
-    $(".city").attr("style", "font-weight: bold; font-size: 30px", )
-    $("#wind-speed").append("Wind speed: " + response.wind.speed + " MPH")
-    var convert = response.main.temp
-    var F = (convert - 273.15) * 1.80 + 32
-    F = F.toFixed(0)
+    displayWeatherInfo(response);
+    var F =  convertToFarenheit(response.main.temp); 
     $("#temperature").append("Temperature: " + F + "°")
-});
+  });
 });
 
 //Function to clear the input field upon 'submit'
@@ -128,8 +146,3 @@ $("#city-title").empty()
 $("#temperature").empty()
 $("#wind-speed").empty()
 };
-
-
-
-
-
