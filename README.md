@@ -6,7 +6,7 @@ This is a weather created using the OpenWeatherMap API. This was a huge learning
 
 ## Installation
 
-Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Day Planner on GitHub Pages](https://alexgignilliat.github.io/Day-Planner/)
+Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Weather Dashboard on GitHub Pages](https://alexgignilliat.github.io/Weather-Dashboard/)
 
 ## Technologies Utilized
 
