@@ -1,4 +1,4 @@
-// I definitely could have written this in a much more succinct and less repetitive way, but I have been completely focused on project 1. This app is fully functional and should meet all required criteria. One major thing I learned during this assignment is how to use template literals.
+// I definitely could have written this in a much more succinct and less repetitive way, but I have been completely focused on project 1. This app is fully functional and should meet all required criteria. One major thing I learned during this assignment is how to use template literals. Something I plan to work on in the next few days is to prevent duplicate buttons. In the mean time, here's what I've got! 
 
 var APIKey = "0234a5db053f0c8c1789c2487e8d0de2";
 var buttonDiv = $(".button-div")
@@ -6,12 +6,13 @@ var cityButtonArr = []
 
 loadData();
 
+//function to clear out text before appending new data
 function reloadData() {
   $("#city-title").empty();
   $("#temperature").empty();
   $("#wind-speed").empty();
 };
-
+//function to clear out the forecast before appending new data
 function clearForecastBoxes() {
   for (i = 1; i < 6; i++) {
     $("#date" + i).empty();
@@ -132,7 +133,6 @@ $("#form").on('submit', function (e) {
     clearForm();
 
     function generateButton() {
-      // $("#city-input").text("")
       var create = $("<button>")
       create.attr("class", "btn btn-outline-secondary")
       create.attr("type", "button")
@@ -387,8 +387,7 @@ function initialize() {
     };
       });
     };
-
-
+    
     initialize();
 
 
