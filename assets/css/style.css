@@ -143,12 +143,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: rgb(31,31,31);
     letter-spacing: 8px;
     line-height: 20px;
     font-size: 12px;
-    border-top: 1px rgba(255, 255, 255, 0.103) solid;
-    background-color: rgba(255, 255, 255, 0.103);
+    border-top: 1px rgba(255, 255, 255, 0.315) solid;
+    background-color: rgba(255, 255, 255, 0.747);
 }
 
 @media only screen and (max-width: 833px) {
