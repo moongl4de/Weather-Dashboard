@@ -4,6 +4,7 @@
 
 This is a weather created using the OpenWeatherMap API. This was a huge learning experience, and while there are still a few things I'm working out, it's generally how I envisioned it. I went into this not knowing a ton about APIs, and although I most definitely have a lot more to learn, I believe I now have a solid foundation to build upon.
 
+![image](./assets/css/Weather-Dashboard-SS.png)
 ![image](./Weather-Mockup.png)
 
 ## Installation
