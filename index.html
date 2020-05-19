@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADTyrYA0su5ALXk1wDu+/8AY9P3AO/7/wDT8f0A9v38ACK++QD4/fwA+P7/AOzq3wD7/v8A/P7/AIvr/wACvP0AyceuAM7ErgCA0usAmOj/ANHKtwCqxLgA6fr9AOr6/QCS3NMA083AAASn9QDz/f0AiuD6ANrTwADV9vsAsOv/ANnVxgDc1MMA//39ANv3/gC18f8AEbf4AMLo/wDf/f4ASOT/AMLw/AAB1P4AANr+ANXPvgDp49UAPdH0APD9/gDT9P8A+P3+AOvp3gD8/f4AkOH+AP/9/gA+7OsAv+r9AOD6/wDPyLMAzcm2AOX6/wAB1P8A5/r/AN7o3ADw/f8AAOn/APL9/wDX0MIAz9TOAKzq/gABr/0AyMClAIrh/wDCxrcA29fFAO3q4gCx9v4A1d7RAM3DrgC89fsAB839AMnv+wDl4tQAIfD5AObi1ADv/P0A0+74APb7+gD3/P0A5uvmANvUxgC06v8AycOvAAK+/gAAyv4A4vn+AAHN/gAB0P4A2+PYAADc/gDg5NsAAOL+AN/o3gDm49gA1M/BANDTxADw/P4A9Pz+ANHy/ADAwq0A6ufbANPz/wDU8/8A+v/+AAzq+wD///4AxsW2AAW6/AAAwf8ABbv/AALB/wAAxP8AZ+z/AAHH/wDOx7MABsj5AADN/wDJzbwAAc3/AOPd0ADo+PwA08y5AADe/ABwyusAv+TUAIbd/wDWz8IA8vz/AKTy/gBn1PcA8/z/AD3S+wB78v8A1tPFAOnp4gAx7/gADuT8ALTp/gBN0ukA+///AP3//wDCyboA////ACHQ/wB31v0Auvb4AOL4/QCk3vAAoOP/AM/OwADu+/0A5uXXANLSwwADpvgABKv+AMbBrAD5/v0A+v79ANvWxgDY9f4AALr+AAG6/gABvf4AfeTXAEzZ9gDh9f4A4Pj+AFHU+QAByf4A8PLsANHJsgAB0v4AAdX+AOPh1QAA3v4A7fv+ANTNvgAA4f4A7/v+ANDSxADw+/4A6ubbAPz+/gDZ9PwA3NbHAP7+/gDd9PwAFaj2AADD/wDw7ecA3vj/AMXMvADi280AzMy8AM/LuQDn+P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl3KXl5eXwsI1IpeXlZeXly2zAE0RU44se4KyVgkzl5fJQlm5FDkBGWeey6FYV5eXSiHBgFG+oLYdOlukbBBGbcLGp2YyC0lzlshIyoe8aI+XDWoXVZwVfkxhPmVjIEOfl3C9x058kTasAoUYk51QPZdwux6ttLdAUpBxg7UIhF6XlCccLl08K7pkYipfogRLl3AFBhN2en9gYH2xdcQmm5elBcCSo1x1xXh1q0WGKTuXpUGBEjRPdA+pqncamW89l5QxVMOMR5h5jSglDiTMiJeXl6aarh9aRLCKN2s4BwyXl5eXMQOvqDCJbiMWi3CXl5eXl5UKi2kbL7g/Mb+XlwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        rel="icon" type="image/x-icon" />
 </head>
+
 <body>
-<div class="container" id="main-container">
-    <div class="container" id="header">
-        <p id="header-text">Weather Dashboard</p>
-    </div>
-    <div class="row" id="main-row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" id="main-col-left">
-            <form id="form">
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Search for a City:</label>
-                  <input type="text" class="form-control" id="city-input" autocomplete="off" placeholder="">
+    <div class="container" id="main-container">
+        <div class="container" id="header">
+            <p id="header-text">Weather Dashboard</p>
+        </div>
+        <div class="row" id="main-row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" id="main-col-left">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Search for a City:</label>
+                        <input type="text" class="form-control" id="city-input" autocomplete="off" placeholder="">
+                    </div>
+                </form>
+                <div class="button-div">
                 </div>
-            </form>
-            <div class="button-div">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9" id="main-col-right">
+                <div class="city-div">
+                    <p id="icon" class="icon"></p>
+                    <p id="city-title"></p>
+                    <p id="temperature"></p>
+                    <p id="wind-speed"></p>
+                    <p id="UV-index" class="badge"></p>
+                </div>
+                <div class="forecast-div">
+                    <div class="forecast-box" id="box1">
+                        <p id="date1"></p>
+                    </div>
+                    <div class="forecast-box" id="box2">
+                        <p id="date2"></p>
+                    </div>
+                    <div class="forecast-box" id="box3">
+                        <p id="date3"></p>
+                    </div>
+                    <div class="forecast-box" id="box4">
+                        <p id="date4"></p>
+                    </div>
+                    <div class="forecast-box" id="box5">
+                        <p id="date5"></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9" id="main-col-right">
-            <div class="city-div">
-                <p id="icon" class="icon"></p>
-                <p id="city-title"></p>
-                <p id="temperature"></p>
-                <p id="wind-speed"></p>
-                <p id="UV-index" class="badge"></p>
-            </div>
-            <div class="forecast-div">
-                <div class="forecast-box" id="box1">
-                    <p id="date1"></p>
-                </div>
-                <div class="forecast-box" id="box2">
-                    <p id="date2"></p>
-                </div>
-                <div class="forecast-box" id="box3">
-                    <p id="date3"></p>
-                </div>
-                <div class="forecast-box" id="box4">
-                    <p id="date4"></p>
-                </div>
-                <div class="forecast-box" id="box5">
-                    <p id="date5"></p>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-<footer>- Alex Gignilliat -<br>&copy;2020</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/script.js"></script>
+    <footer>- Alex Gignilliat -<br>&copy;2020</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
