@@ -72,7 +72,11 @@ img {
     border: none;
     background-color: rgb(214, 214, 214);
     border-radius: 20px;
+}
 
+.btn:hover {
+    letter-spacing: 2px;
+    transition: .5s;
 }
 
 #main-col-right {
