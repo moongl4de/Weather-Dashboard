@@ -12,7 +12,7 @@ body {
 }
 
 #main-container {
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(230, 230, 230, 0.692);
     width: 75%;
     min-width: 500px;
     height: 600px;
