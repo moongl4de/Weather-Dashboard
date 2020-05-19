@@ -4,6 +4,8 @@
 
 This is a weather created using the OpenWeatherMap API. This was a huge learning experience, and while there are still a few things I'm working out, it's generally how I envisioned it. I went into this not knowing a ton about APIs, and although I most definitely have a lot more to learn, I believe I now have a solid foundation to build upon.
 
+![image](./Weather-Mockup.png)
+
 ## Installation
 
 Clone to your local machine and open in your favorite code editor to check it out! Or visit the deployed version at: [Weather Dashboard on GitHub Pages](https://alexgignilliat.github.io/Weather-Dashboard/)
